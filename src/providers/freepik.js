@@ -38,7 +38,7 @@ export function createFreepikProvider(apiKey) {
         previewUrl: item.image?.source?.url || item.thumbnails?.[0]?.url || "",
         thumbnailUrl: item.image?.source?.url || item.thumbnails?.[0]?.url || "",
         sourceUrl: item.url || "",
-        downloadUrl: item.url || "",
+        downloadUrl: item.image?.source?.url || item.thumbnails?.[0]?.url || item.url || "",
         width: item.image?.source?.width || null,
         height: item.image?.source?.height || null,
         author: item.author?.name || "Freepik",
